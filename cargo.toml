@@ -1,0 +1,13 @@
+[package]
+name = "Rust-MongoDB-Project"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1.52.3", features = ["rt-multi-thread", "macros"] }
+warp = "0.4.3"
+serde = { version = "1.0.228", features = ["derive"] }
+thiserror = "2.0.18"
+chrono = { version = "0.4.45", features = ["serde"] }
+futures = { version = "0.3.32", default-features = false, features = ["async-await"] }
+mongodb = "3.7.0"
